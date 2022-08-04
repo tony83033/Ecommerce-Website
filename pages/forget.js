@@ -1,8 +1,7 @@
 import React from 'react'
-import Link from 'next/link';
-const login = () => {
+import Link from 'next/link'
+const forget = () => {
   return (
-    
     <>
     <div className="max-w-md w-full space-y-8 mx-auto">
   <div>
@@ -12,13 +11,13 @@ const login = () => {
       alt="Workflow"
     /> */}
     <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-      Login in to your account
+      Forgot Password
     </h2>
     <p className="mt-2 text-center text-sm text-gray-600">
       Or
-      <Link href={'/signup'}><a className="font-medium text-pink-600 hover:text-pink-500">
+      <Link href={'/login'}><a className="font-medium text-pink-600 hover:text-pink-500">
        
-        Signup
+        login
       </a></Link>
     
     </p>
@@ -43,32 +42,12 @@ const login = () => {
         />
       </div>
       <div>
-        <label htmlFor="password" className="sr-only">
-          Password
-        </label>
-        <input
-          minLength={5}
-          maxLength={30}
-          id="password"
-          name="password"
-          type="password"
-          autoComplete="current-password"
-          required=""
-          className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-pink-500 focus:border-pink-500 focus:z-10 sm:text-sm"
-          placeholder="Password"
-          defaultValue=""
-        />
+        
+        
       </div>
     </div>
     
-    <div className="flex items-center justify-between">
-      <div className="text-sm">
-        <Link href={'/forget'}><a href="#" className="font-medium text-pink-600 hover:text-pink-500">
-          {" "}
-          Forgot your password?{" "}
-        </a></Link>
-      </div>
-    </div>
+   
     <div>
       <button
         type="submit"
@@ -89,7 +68,7 @@ const login = () => {
             />
           </svg>
         </span>
-        Sign in
+        Continue
       </button>
     </div>
   </form>
@@ -99,4 +78,4 @@ const login = () => {
   )
 }
 
-export default login;
+export default forget
