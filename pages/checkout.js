@@ -143,7 +143,7 @@ const checkout = ({cart, addToCart , clearCart, removeFromCart,subTota}) => {
                         
                         <div className='item flex my-5'>
                             <div className=" font-semibold" />
-                           {cart[k].name}
+                           {cart[k].name}/{cart[k].size}/{cart[k].color}
 
                        
 
